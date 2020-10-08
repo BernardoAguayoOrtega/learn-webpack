@@ -4,7 +4,8 @@
 	"description": "Learn webpack basics",
 	"main": "index.js",
 	"scripts": {
-		"build": "webpack",
+		"build": "webpack --mode production",
+		"dev": "webpack --mode development",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -22,5 +23,9 @@
 	"devDependencies": {
 		"webpack": "^4.44.2",
 		"webpack-cli": "^3.3.12"
+	},
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1"
 	}
 }
