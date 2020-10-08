@@ -17,5 +17,9 @@
 		"url": "https://github.com/BernardoAguayoOrtega/learn-webpack/issues"
 	},
 	"homepage": "https://github.com/BernardoAguayoOrtega/learn-webpack#readme",
-	"type": "module"
+	"type": "module",
+	"devDependencies": {
+		"webpack": "^4.44.2",
+		"webpack-cli": "^3.3.12"
+	}
 }
