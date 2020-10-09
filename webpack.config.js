@@ -24,7 +24,7 @@ const plugins = [
 
 const babelRules = {
 	test: /\.js$/,
-	exclude: /node_modules/,
+	exclude: [[/node_modules/], [/__test__/]],
 	use: {
 		loader: 'babel-loader',
 		options: {

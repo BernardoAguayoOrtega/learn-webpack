@@ -8,6 +8,8 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 //import button
 import { Button } from '@material-ui/core';
+//import say hi
+import { sayHey } from './__tests__/random.js';
 
 const Title = styled.h1`
 	font-size: 2rem;
@@ -16,6 +18,8 @@ const Title = styled.h1`
 // console.log(randomNumber());
 
 document.getElementById('app').textContent = randomNumber();
+
+sayHey();
 
 ReactDOM.render(
 	<>
