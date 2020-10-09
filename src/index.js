@@ -17,7 +17,7 @@ const Title = styled.h1`
 
 ReactDOM.render(
 	<>
-		<Title>Hey there</Title> <Button>hey</Button>
+		<Title>Hey there</Title> <Button color='primary'>hey</Button>
 	</>,
 	document.getElementById('app'),
 );
