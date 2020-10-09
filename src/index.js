@@ -6,13 +6,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 //import styles
 import styled from 'styled-components';
+//import button
+import { Button } from '@material-ui/core';
 
 const Title = styled.h1`
-	font-size: 100rem;
+	font-size: 2rem;
 `;
 
 // console.log(randomNumber());
 
 document.getElementById('app').textContent = randomNumber();
 
-ReactDOM.render(<Title>Hey there</Title>, document.getElementById('app'));
+ReactDOM.render(
+	<>
+		<Title>Hey there</Title> <Button>hey</Button>
+	</>,
+	document.getElementById('app'),
+);
