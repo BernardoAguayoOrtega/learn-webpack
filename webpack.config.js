@@ -37,6 +37,10 @@ const babelRules = {
 };
 
 module.exports = {
+	entry: './src/index.js',
+	output: {
+		filename: 'index[contenthash].js',
+	},
 	module: {
 		rules: [babelRules],
 	},
