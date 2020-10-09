@@ -22,20 +22,20 @@ const plugins = [
 	['babel-plugin-styled-components'],
 ];
 
+const babelRules = {
+	test: /\.js$/,
+	exclude: /node_modules/,
+	use: {
+		loader: 'babel-loader',
+		options: {
+			presets: ['@babel/preset-react'],
+			plugins: plugins,
+		},
+	},
+};
+
 module.exports = {
 	module: {
-		rules: [
-			{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['@babel/preset-react'],
-						plugins: plugins,
-					},
-				},
-			},
-		],
+		rules: [babelRules],
 	},
 };
