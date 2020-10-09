@@ -47,5 +47,10 @@ module.exports = {
 	module: {
 		rules: [babelRules],
 	},
-	plugins: [new HtmlWebpackPlugin()],
+	plugins: [
+		new HtmlWebpackPlugin({
+			title: 'Learn webpack',
+			template: 'public/index.html',
+		}),
+	],
 };
