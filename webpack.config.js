@@ -1,4 +1,7 @@
-const plugins = [
+//import webpack plugins
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const babelPlugins = [
 	[
 		'babel-plugin-import',
 		{
@@ -31,7 +34,7 @@ const babelRules = {
 		loader: 'babel-loader',
 		options: {
 			presets: presets,
-			plugins: plugins,
+			plugins: babelPlugins,
 		},
 	},
 };
@@ -44,4 +47,5 @@ module.exports = {
 	module: {
 		rules: [babelRules],
 	},
+	plugins: [new HtmlWebpackPlugin()],
 };

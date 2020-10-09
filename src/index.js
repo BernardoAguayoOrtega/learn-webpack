@@ -15,8 +15,6 @@ const Title = styled.h1`
 
 // console.log(randomNumber());
 
-document.getElementById('app').textContent = randomNumber();
-
 ReactDOM.render(
 	<>
 		<Title>Hey there</Title> <Button>hey</Button>
