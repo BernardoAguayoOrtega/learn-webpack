@@ -22,13 +22,15 @@ const plugins = [
 	['babel-plugin-styled-components'],
 ];
 
+const presets = [['@babel/preset-react'], ['@babel/preset-env']];
+
 const babelRules = {
 	test: /\.js$/,
-	exclude: [[/node_modules/], [/__test__/]],
+	exclude: [[/node_modules/], [/__tests__/]],
 	use: {
 		loader: 'babel-loader',
 		options: {
-			presets: ['@babel/preset-react'],
+			presets: presets,
 			plugins: plugins,
 		},
 	},
